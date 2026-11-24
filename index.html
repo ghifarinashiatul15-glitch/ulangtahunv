@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Untuk Vita Salwa Aftahunnisa 💗</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- PASSWORD SCREEN -->
+<div class="password-screen" id="passwordScreen">
+    <div class="password-card">
+        <div class="password-icon">🔐</div>
+        <p class="password-eyebrow">
+            A LITTLE SURPRISE FOR YOU
+        </p>
+        <h1>Just for Vita ♡</h1>
+        <p class="password-description">
+            Masukkan taggal km itu password okeyy baca yaaa.
+        </p>
+        <form id="passwordForm">
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Masukkan password..."
+                autocomplete="off"
+                required
+            >
+            <button class="pill" type="submit">
+                Buka💗
+            </button>
+        </form>
+        <p class="password-error" id="passwordError"></p>
+        <p class="password-hint">
+            A little page made with love ♡
+        </p>
+
+    </div>
+</div>
+
+
+<!-- WEBSITE UTAMA -->
+<div id="siteContent" hidden>
+
+    <!-- LETAKKAN SEMUA KODE WEBSITE ULANG TAHUN VITA DI SINI -->
+
+</div>
+
+
+<!-- MUSIK -->
+<audio id="bgMusic" src="song.mp3" loop></audio>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>
+
+  <header class="hero" id="home">
+    <span class="heart h1">♡</span><span class="heart h2">✦</span><span class="heart h3">♥</span><span class="heart h4">♡</span>
+    <div class="hero-inner">
+      <div class="eyebrow">a little surprise, made with love</div>
+      <h1>Happy Birthday,<br>Vita Salwa Aftahunnisa!</h1>
+      <p>Hari ini adalah hari spesial seseorang yang kehadirannya mampu membuat dunia terasa lebih indah.Semoga halaman kecil ini bisa membuat senyummu bertambah lebar. 💗</p>
+      <button class="pill" onclick="celebrate();document.querySelector('#story').scrollIntoView({behavior:'smooth'})">Buka kejutan kecil <span>♡</span></button>
+      <div class="scroll-note">scroll pelan-pelan ya ↓</div>
+    </div>
+  </header>
+
+  <section id="story">
+    <div class="section-head"><div class="eyebrow">for someone special</div><h2>Hari ini tentang kamu</h2><p>Satu halaman kecil untuk merayakan seseorang yang begitu berarti.</p></div>
+    <div class="intro">
+      <div class="illustration" aria-label="Ilustrasi hadiah dan hati">🎀💗</div>
+      <div class="note-card"><h3>Dear, Vita</h3><p>Selamat bertambah usia Cantik! Semoga setiap langkahmu dipenuhi hal-hal baik, setiap harimu punya alasan untuk tersenyum, dan semua impian yang kamu simpan perlahan menemukan jalannya. Jangan lupa bahagia, ya. Kamu pantas mendapatkan banyak hal indah.</p></div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="section-head"><div class="eyebrow">little moments</div><h2>Our memory corner</h2><p>Tempat untuk menyimpan potongan cerita dan momen yang ingin selalu diingat.</p></div>
+    <div class="photos">
+      <div class="photo" style="--tilt:-2deg"><div class="photo-art"><img src="foto-1.jpg" alt="Foto kenangan pertama" onerror="this.style.display='none';this.parentElement.innerHTML='🌷'"></div><strong>Sweet moment</strong><small>momen yang berkesan</small></div>
+      <div class="photo" style="--tilt:1.5deg"><div class="photo-art"><img src="foto-2.jpg" alt="Foto kenangan kedua" onerror="this.style.display='none';this.parentElement.innerHTML='🧸'"></div><strong>Little happiness</strong><small>hal sederhana yang berarti</small></div>
+      <div class="photo" style="--tilt:-1deg"><div class="photo-art"><img src="foto-3.jpg" alt="Foto kenangan ketiga" onerror="this.style.display='none';this.parentElement.innerHTML='🌸'"></div><strong>Forever remembered</strong><small>kenangan yang tersimpan</small></div>
+    </div>
+  </section>
+
+  <section id="gift">
+    <div class="section-head"><div class="eyebrow">tap to unwrap</div><h2>A little gift for you</h2><p>Katanya hadiah terbaik tidak selalu harus besar. Kadang, kejutan kecil juga bisa berarti.</p></div>
+    <div class="gift-wrap">
+      <button class="gift" id="giftButton" aria-label="Buka hadiah" onclick="openGift()">🎁</button>
+      <div class="gift-message" id="giftMessage"><h3>Surpriseee! 💝</h3><p>Hadiah ini mungkin sederhana, tapi dibuat khusus untukmu. Semoga kamu selalu dikelilingi cinta, tawa, dan orang-orang yang tulus menyayangimu.</p><div style="font-size:2rem">🌷🍰💗</div></div>
+      <div><button class="pill" onclick="openGift()">Buka hadiahmu</button></div>
+    </div>
+  </section>
+
+  <section class="letter-area" id="letter">
+    <div class="section-head"><div class="eyebrow">a secret note</div><h2>Surat kecil untukmu</h2><p>Ada pesan yang disimpan khusus di sini. Buka kalau kamu siap membaca. ♡</p></div>
+    <div class="letter-box">
+      <button class="pill" id="letterButton" onclick="toggleLetter()">💌 Buka surat rahasia</button>
+      <article class="letter" id="secretLetter">
+        <h3>Untuk Vita,</h3>
+        <p>Di hari spesialmu ini, aku cuma ingin bilang: terima kasih sudah hadir dan menjadi bagian indah dalam cerita ini.</p>
+        <p>Aku mungkin tidak selalu punya kata-kata yang sempurna, tapi aku berharap kamu tahu bahwa kebahagiaanmu itu penting. Semoga kamu semakin kuat menghadapi hari-hari sulit, semakin dekat dengan semua impianmu, dan tidak pernah kehilangan alasan untuk tersenyum.</p>
+        <p>Teruslah menjadi Vita yang istimewa dengan caramu sendiri. Semoga hal-hal baik selalu menemukan jalan menuju kamu.</p>
+        <p>Selamat ulang tahun, Vita. Keep shining, and keep being you. 💗</p>
+        <p style="text-align:right;font-family:'Playfair Display',serif;font-size:1.2rem;color:#a65377">With all my love ♡</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>Made with ♡, just for Vita Salwa Aftahunnisa<br><span>Semoga hari ini seindah senyummu.</span></footer>
+<audio id="bgMusic" src="song.mp3" loop></audio>
+
+<button class="music-control" id="musicButton" onclick="toggleMusic()">
+    ♫ Putar musik
+</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

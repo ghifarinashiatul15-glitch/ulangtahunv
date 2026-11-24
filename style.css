@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+    :root{--pink:#f6a9c4;--rose:#d96b96;--ink:#563747;--cream:#fff8fa;--soft:#ffe6ef}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+    button{font:inherit;cursor:pointer}
+    .hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:72px 22px 55px;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 20%,#fff 0 8%,transparent 28%),linear-gradient(145deg,#fff8fb,#ffe5ef 58%,#fff4f7)}
+    .hero:before,.hero:after{content:"";position:absolute;border:1px solid #f4b5cb;border-radius:50%;width:360px;height:360px;opacity:.45}
+    .hero:before{top:-210px;right:-110px}.hero:after{bottom:-240px;left:-100px;width:440px;height:440px}
+    .hero-inner{max-width:760px;position:relative;z-index:1}
+    .eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:#b96b89;font-weight:700}
+    h1,h2,h3{font-family:'Playfair Display',serif}
+    h1{font-size:clamp(2.8rem,8vw,5.7rem);line-height:1.05;margin:18px 0;color:#9c4c70}
+    .hero p{font-size:1.05rem;line-height:1.8;max-width:570px;margin:0 auto 28px;color:#80596a}
+    .pill{display:inline-flex;align-items:center;gap:9px;border:0;border-radius:999px;background:#c85f89;color:white;padding:14px 23px;box-shadow:0 10px 25px #d96b963d;transition:.2s}
+    .pill:hover{transform:translateY(-3px);box-shadow:0 14px 28px #d96b9655}
+    .scroll-note{margin-top:28px;font-size:.8rem;color:#b47b91}
+    .heart{position:absolute;color:#e78eaf;animation:float 6s ease-in-out infinite;opacity:.7;user-select:none}
+    .h1{left:9%;top:22%;font-size:30px}.h2{right:12%;top:28%;font-size:22px;animation-delay:1s}.h3{right:19%;bottom:17%;font-size:34px;animation-delay:2s}.h4{left:20%;bottom:14%;font-size:19px;animation-delay:3s}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-20px) rotate(8deg)}}
+    section{padding:82px 20px}
+    .section-head{text-align:center;max-width:650px;margin:0 auto 34px}
+    .section-head h2{font-size:clamp(2rem,5vw,3rem);margin:10px 0;color:#9c4c70}
+    .section-head p{color:#967383;line-height:1.7}
+    .intro{max-width:850px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    .note-card{background:white;border:1px solid #f8d7e3;border-radius:24px;padding:30px;box-shadow:0 15px 40px #a34e6d0d}
+    .note-card h3{font-size:1.6rem;margin:0 0 12px;color:#a65377}
+    .note-card p{line-height:1.85;color:#795d6a;margin:0}
+    .illustration{min-height:260px;border-radius:28px;background:linear-gradient(145deg,#ffd9e7,#fff0f5);display:grid;place-items:center;font-size:6rem;position:relative;overflow:hidden}
+    .illustration:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #fff9;border-radius:50%}
+    .gallery{background:#fff0f5}
+    .photos{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .photo{background:white;padding:12px 12px 18px;border-radius:9px;box-shadow:0 10px 28px #86465d17;transform:rotate(var(--tilt));transition:.25s}
+    .photo:hover{transform:translateY(-7px) rotate(0deg)}
+    .photo-art{height:220px;border-radius:5px;display:grid;place-items:center;font-size:3.2rem;background:linear-gradient(145deg,#fbd0df,#fff0f5);overflow:hidden}
+    .photo-art img{width:100%;height:100%;object-fit:cover;display:block}
+    .photo strong{display:block;text-align:center;font-family:'Playfair Display',serif;font-size:1.1rem;margin-top:13px;color:#95516e}
+    .photo small{display:block;text-align:center;color:#ad8797;margin-top:4px}
+    .hint{text-align:center;color:#9e7d8b;font-size:.82rem;margin:22px auto 0}
+    .gift-wrap{max-width:650px;margin:auto;text-align:center}
+    .gift{border:0;background:none;font-size:7rem;filter:drop-shadow(0 12px 12px #c66a8b30);transition:.25s;animation:bob 2.4s ease-in-out infinite}
+    .gift:hover{transform:scale(1.12) rotate(-6deg)}
+    @keyframes bob{50%{translate:0 -10px}}
+    .gift-message{display:none;margin:24px auto 0;max-width:500px;background:white;padding:25px;border:1px solid #f6d3df;border-radius:22px;line-height:1.8;box-shadow:0 12px 35px #a34e6d12}
+    .gift-message.show{display:block;animation:appear .5s ease}
+    .letter-area{background:linear-gradient(145deg,#fff7fa,#ffeaf1)}
+    .letter-box{max-width:650px;margin:auto;text-align:center}
+    .letter{display:none;text-align:left;background:#fffdfd;border:1px solid #f3d2df;border-radius:18px;padding:30px;margin-top:22px;box-shadow:0 14px 35px #a34e6d12;line-height:1.9;color:#765666}
+    .letter.show{display:block;animation:appear .5s ease}
+    .letter h3{color:#a65377;font-size:1.7rem;margin-top:0}
+    @keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    .music-control{position:fixed;right:18px;bottom:18px;z-index:5;border:1px solid #f0bfd0;background:#fff;color:#a65377;border-radius:999px;padding:12px 16px;box-shadow:0 8px 25px #73344b20}
+    footer{text-align:center;padding:35px 20px 45px;color:#a77d8e;font-size:.85rem}
+    .confetti{position:fixed;top:-20px;z-index:10;pointer-events:none;animation:fall linear forwards}
+    @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+    @media(max-width:700px){.intro{grid-template-columns:1fr}.illustration{min-height:190px}.photos{grid-template-columns:1fr;max-width:340px}.photo-art{height:250px}section{padding:65px 18px}.h1{left:4%}.h2{right:5%}}
+
+/* PASSWORD SCREEN */
+.password-screen {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff0f5, #ffe0eb);
+}
+
+.password-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px #d96b9625;
+}
+
+.password-icon {
+    font-size: 3rem;
+}
+
+.password-card h1 {
+    color: #9c4c70;
+    font-family: 'Playfair Display', serif;
+}
+
+.password-description {
+    color: #80596a;
+    line-height: 1.7;
+}
+
+.password-card form {
+    display: grid;
+    gap: 12px;
+}
+
+.password-card input {
+    padding: 14px;
+    border: 1px solid #efc3d3;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.password-error {
+    color: #e05275;
+    font-size: 13px;
+}
+
+.password-hint {
+    color: #b47b91;
+    font-size: 12px;
+}
+
+#siteContent[hidden] {
+    display: none !important;
+}
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body.password-locked {
+    overflow: hidden;
+}
+
+.password-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #fff0f5, #ffe0eb);
+}
+
+#siteContent[hidden] {
+    display: none !important;
+}
